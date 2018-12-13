@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<script src="./js/holiday.js"></script>
+	<title>521宿舍管理系统</title>
+
+<style>
+	body {
+		text-align: center;
+		background-color: burlywood;
+	}
+
+	.testDiv {
+		margin: auto;
+		width: 200px;
+		padding: 12px;
+		font-size: 16px;
+		background-color: antiquewhite;
+		font-size: larger;
+		border-radius: 16px
+	}
+	input {
+		margin-right:6px;
+		background: #7DB9DE;
+		font-size: 18px;
+		border: 0px;
+		border-radius: 5px
+		
+	}
+</style>
+</head>
+
+<body>
+	<h1>521专用网络</h1>
+	<div class="testDiv">
+		<a href="./jsp/pay.jsp">支出录入</a> <br /> <a href="./jsp/pay.jsp">收入录入</a>
+		<br /> <a href="./query.action">流水查询</a> <br /> <input type="button"
+			onclick="holiday()" value="值日查询">
+	</div>
+	<br>
+	<div class="testDiv" id = "work">
+		
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.craftsman18.dormitory.dao.LoginMapper">
+
+	<select id="login" parameterType="String"
+		resultType="cn.craftsman18.dormitory.pojo.User">
+		SELECT * from user_login where name = #{name}
+	</select>
+
+	<insert id="register" parameterType="cn.craftsman18.dormitory.pojo.User">
+		insert into user_login (name, passwd, permission) values (#{name},#{passwd},1)
+	</insert>
+</mapper>

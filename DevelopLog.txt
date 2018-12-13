@@ -1,0 +1,21 @@
+开发日志
+1.[EXPERIENCE]:网页适配手机WebView  设置当前设备的最小值为1px 
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+2.[ERROR]:javax.el.PropertyNotFoundException: 
+	Property [xx] not found on type [xx]
+	原因：pojo方法未公开，无法访问pojo类
+	解决办法：公开pojo方法
+		需要确保有一个getter方法完全匹配属性名称，并且该方法是public（非 - static）
+		并且该方法不接受任何参数，并且它返回非void。对于boolean（不Boolean！）属性
+		getter方法名称必须以开始is而不是get。
+		
+3.[EXPERIENCE]：JSP中格式化时间
+	<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+	<fmt:formatDate value="${time}" pattern="yyyy-MM-dd HH:mm:ss"/>  
+	
+4. 数据排序（顺带把分页做了）
+	解决思路
+		1.js前端排序（失败）
+		2.Java后台拍好直接传回去（每次排序都需要请求）
+		3.SQL排序传出去（每次排序都要查询）
