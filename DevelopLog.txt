@@ -14,7 +14,7 @@
 	<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 	<fmt:formatDate value="${time}" pattern="yyyy-MM-dd HH:mm:ss"/>  
 	
-4. 数据排序（顺带把分页做了）
+4. [FUNCTION]数据排序（顺带把分页做了）
 	解决思路
 		1.js前端排序（失败）
 		2.Java后台拍好直接传回去（每次排序都需要请求）
