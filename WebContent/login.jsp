@@ -50,13 +50,22 @@ body {
 </head>
 
 <body>
-	<div class="form">
 
+
+<%
+int i = 2;
+int j = 3;
+out.println(i + j);
+%>
+
+
+	<div class="form">
+		
 		<form name="loginForm" id="login_form" method="post" action="${pageContext.request.contextPath}/login.action">
 			<h2>通往知识天堂的时光隧道</h2>
 			<div class="div_user">
 				<span></span><input name="username" class="username" type="text"
-					placeholder="&emsp;用户名" />
+					placeholder="&emsp;用户名"  value="${i}"/>
 			</div>
 			<div class="div_pw">
 				<span></span><input class="pw" name="userpass" type="password"
